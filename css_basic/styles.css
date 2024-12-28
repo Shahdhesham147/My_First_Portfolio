@@ -1,0 +1,58 @@
+/* إعادة تعيين القيم الافتراضية للمسافات والحواف لجميع العناصر */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تنسيق الـ Body كحاوية رئيسية */
+body {
+    display: flex;
+    flex-direction: column; /* ترتيب العناصر الفرعية (header, main, footer) عموديًا */
+    height: 100vh; /* ارتفاع الصفحة بالكامل */
+    font-family: Arial, sans-serif; /* تحديد خط افتراضي */
+}
+
+/* تنسيق الـ Header */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* حاوية الـ Main */
+main {
+    display: flex; /* ترتيب العناصر الفرعية (article, aside) أفقيًا */
+    flex: auto; /* السماح لها بأخذ المساحة المتبقية بين الـ header والـ footer */
+    flex-direction: row; /* ترتيب أفقي للعناصر */
+    background-color: #f4f4f4;
+}
+
+/* تنسيق الـ Article (يشغل 2/3 من الحاوية الرئيسية) */
+article {
+    flex: 2; /* يشغل ثلثي العرض */
+    background-color: #ffffff;
+    padding: 15px;
+    overflow-y: auto; /* تمكين التمرير العمودي */
+    border-right: 1px solid #ccc; /* اختياري: إضافة خط فاصل */
+}
+
+/* تنسيق الـ Aside (يشغل 1/3 من الحاوية الرئيسية) */
+aside {
+    flex: 1; /* يشغل ثلث العرض */
+    background-color: #e9ecef;
+    padding: 15px;
+    overflow-y: auto; /* تمكين التمرير العمودي */
+}
+
+/* تنسيق الـ Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}

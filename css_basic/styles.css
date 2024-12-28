@@ -56,3 +56,9 @@ footer {
     text-align: center;
     font-size: 1rem;
 }
+.logo {
+    font-size: 2em; /* تكبير حجم الشعار */
+    color: #ff4500; /* تغيير اللون */
+    margin-right: 10px; /* إضافة مسافة بجانب الشعار */
+}
+

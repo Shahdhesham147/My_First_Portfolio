@@ -32,3 +32,12 @@ h1, h2, h3, h4, h5, h6 {
 p {
     margin-bottom: 10px; 
 }
+.works_on_smartphone main {
+    flex-direction: column; /* تحويل الترتيب إلى عمودي على الهواتف */
+}
+
+.works_on_smartphone article,
+.works_on_smartphone aside {
+    flex: 1; /* تعيين عرض متساوٍ لكل من article و aside */
+}
+
